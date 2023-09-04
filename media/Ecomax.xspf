@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://xspf.org/ns/0/" xmlns:vlc="http://www.videolan.org/vlc/playlist/ns/0/" version="1">
+	<title>Lista de reproducción</title>
+	<trackList>
+		<track>
+			<location>file:///C:/Users/OLMEDO%20JUAN%20IGNACIO/Downloads/ecomax.mp4</location>
+			<title>ECOMAX PROD DE LIMPIEZA EN SOBRES -LE MERIDIAN SRL DISTRIBUIDORA MAYORISTA PRODUCTOS  DE LIMPIEZA-</title>
+			<creator>LE MERIDIAN SRL MAYORISTA DE ARTICULOS DE LIMPIEZA</creator>
+			<annotation>Lnea concentrada de desodorante, limpiadores, lavandina y desinfectantes que permiten ahorrar y cuidar el medio ambiente.</annotation>
+			<image>file:///C:/Users/OLMEDO%20JUAN%20IGNACIO/Downloads/Folder.jpg</image>
+			<duration>48182</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>0</vlc:id>
+			</extension>
+		</track>
+	</trackList>
+	<extension application="http://www.videolan.org/vlc/playlist/0">
+		<vlc:item tid="0"/>
+	</extension>
+</playlist>
