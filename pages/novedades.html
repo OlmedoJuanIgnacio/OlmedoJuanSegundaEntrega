@@ -3,37 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
+
+  <header class="encabezado_navbar">
     
-      <nav>
-        <lu class="nav">
+        <div class="encabezado_tel">
+          <p>Su consulata no molesta</p>
+          <div class="encabezado_wp">
+            <i class='bx bxl-whatsapp'></i>
+            <p>351799999</p>
+        </div>
+      
     
-            <li>
-                <img class="imagen_principal" src="../img/logo-redondo WhatsApp Image 2023-08-02 at 10.04.18.jpeg">
-            </li>
-            <li>
-              <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-               <a href="./qs.html">Quienes somos?</a>
-            </li>
-            <li>
-                 <a href="./productos.html">Productos</a>
-            </li>
-            <li>
-                <a href="./novedades.html">Novedades</a>
-            </li>
-            <li>
-                <a href="./contacto.html">Contacto</a>
-            </li>
-        </lu>
+        </div>
+    
+        <img class="imagen_principal" src="../img/logo-redondo WhatsApp Image 2023-08-02 at 10.04.18.jpeg">
+       
+        <div class="contenedor_nav">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="nav-link" href="./qs.html">Quienes Somos?</a>
+                  <a class="nav-link" href="./productos.html">Productos</a>
+                  <a class="nav-link" href="./novedades.html">Novedades</a>
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    
+    
+        </div>
         
-      </nav>
-    </header>        
+        
+       
+     </header>
+ 
     
     <main>
 
@@ -45,18 +60,19 @@
         <video src="../media/sobre_ecomax_rinde5litros.MP4" controls>
         <p>El video no se puede reproducir</p>
         </video>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, harum voluptas, illum provident doloremque voluptate deserunt deleniti at fugit necessitatibus eos error omnis asperiores assumenda. Tenetur, ducimus! Ab, facilis quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veniam harum odio. Officiis inventore voluptate blanditiis impedit, illo incidunt nulla veniam a molestias perspiciatis perferendis, est, sequi maxime libero iusto!</p>
+        <p>La nueva lavandina en sobre ecomax nos trae una novedad ecologica y practica, en un sobre pequeño facil de manipular encontramos un polvo que diluido en agua rinde hasta 5 litros de producto listo para usar, es facil de trasladar y guardar, sumado a que nos ayuda a proteger el medio ambiente reduciendo el consumo de plastico de los bidones habituales </p>
       </div>
 
       <div class="novedad2">
         <h2>Nuevo detergente concentrado</h2>
         <img src="../img/cp130.jpg" alt="imagen detergente">
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam tenetur aperiam, tempore esse vel labore, quae mollitia deserunt fuga itaque ea laudantium! Officiis, repudiandae iusto. Vel vitae totam dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe vel dolor illum maiores voluptatem explicabo corporis similique tempora, optio voluptas, reiciendis illo perferendis, ipsa placeat. Quis ipsum minima veniam obcaecati.</p>
+        <p>El nuevo detergente concentrado cp 130 es un producto que se utiliza en la limpieza de pisos, azulejos, paredes, mesedas, vajillas, etc.. Es un producto que comple con todas las normas de seguridad y posee aprobacion del ANMAT para ser utilizado en la industria alimanticia.</p>
       </div>  
 
     </main>
 
+   
     <footer>
 
         <div class="icons" >
@@ -67,5 +83,8 @@
          </div>
 
     </footer>
+
+   
+    <script src="../js/bootstrap.bundle.min.js"> </script>
 </body>
 </html>
