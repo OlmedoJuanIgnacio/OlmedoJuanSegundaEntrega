@@ -1,0 +1,129 @@
+
+@media ( max-width: 415px) {
+    
+    
+    .encabezado_tel{
+        display: none;
+    }
+
+    .imagen_principal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .grid_productos{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows: repeat(4 , 1fr);
+        overflow: auto;
+        gap: 10px;
+        
+        .card {
+
+            img {
+    
+                width: 290px;
+                height: 250px
+            }
+    
+            .card-body {
+                width: 290px;
+                background: white;
+               
+            }
+        }
+
+    
+    }
+    
+   
+    
+    .icons{
+            margin-top: 20px;
+        }
+
+   .grid_contacto {
+
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 150px repeat(2, 1fr);
+            grid-template-areas: 
+            "texto"
+            "form" 
+            "ubicacion";
+            gap: 10px;
+
+        }
+        
+    .texto_contacto{
+            grid-area:texto;
+            width: 90%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin-top: 60px;
+      
+        }
+       
+    .form_contacto{
+            grid-area:form;
+            width: 90%;
+            margin-top:70px ;
+
+    }
+
+    .imagen_ubicacion{
+        grid-area: ubicacion;
+        
+        img{
+            width: 90%;
+        }
+        
+    }
+    
+    .encabezado_tel {
+        font-size: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        height: 13%;
+        
+    }
+
+    .novedad1{
+    
+        
+        width: 300px;
+        
+        video{
+            width: 100%;
+            
+            
+        }
+    }
+    
+    
+    .novedad2{
+        width: 300px;
+        
+        
+        img{
+            width: 100%;
+            
+            }
+    }
+
+
+    .principal_qs{
+
+        img{
+            width: 300px;
+        }
+
+}
+
+}

@@ -4,7 +4,7 @@
 }
 
 body {
-  background: linear-gradient(rgb(212, 235, 212), rgb(139, 238, 108));
+  background: rgb(212, 235, 212);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,45 +25,39 @@ body {
   width: 100%;
   margin-bottom: 40px;
 }
+
 .encabezado_navbar .container-fluid {
   background-color: rgb(146, 252, 151);
   width: 100%;
 }
+
 .encabezado_navbar .container-fluid .navbar-nav {
   margin-left: 10%;
   background-color: rgb(146, 252, 151);
   display: flex;
 }
+
 .encabezado_navbar .container-fluid .navbar-nav a {
-  margin-left: 70px;
-}
-.encabezado_navbar .container-fluid .navbar-nav a:hover {
-  transform: scale(1.2);
+  margin-left: 80px;
 }
 
 .encabezado_tel {
-  width: 50%;
+  width: 70%;
   height: 10%;
   background-color: rgb(189, 231, 192);
   position: absolute;
-  margin-left: 45%;
+  margin-left: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
   color: rgb(126, 189, 147);
   margin-top: 20px;
-  font-size: 150%;
-}
-.encabezado_tel .encabezado_wp {
-  display: flex;
+  font-size: 20pt;
 }
 
-.carousel {
-  width: 100%;
-}
-.carousel .carousel-item img {
-  height: 400px;
+.encabezado_tel .encabezado_wp {
+  display: flex;
 }
 
 .contenido_principal {
@@ -86,6 +80,7 @@ body {
   row-gap: 20px;
   margin-bottom: 50px;
 }
+
 .principal_qs .contenido_qs {
   display: flex;
   flex-direction: column;
@@ -109,20 +104,24 @@ body {
   overflow: auto;
   gap: 10px;
 }
+
 .grid_productos .card {
   border-radius: 10px;
   background: white;
   display: flex;
   flex-direction: column;
 }
+
 .grid_productos .card img {
   width: 500px;
   height: 400px;
 }
+
 .grid_productos .card .card-body {
   width: 500px;
   background: white;
 }
+
 .grid_productos .card .btn {
   background: hwb(133 5% 18%);
   border: 1px solid gray;
@@ -132,16 +131,13 @@ body {
   align-items: end;
   margin-bottom: 0%;
 }
-.grid_productos .card:hover {
-  transform: scale(1.02);
-  border-radius: 10px;
-}
 
 /* Pagina Novedades */
 .novedad1 {
   margin-top: 30px;
   width: 700px;
 }
+
 .novedad1 video {
   width: 100%;
 }
@@ -150,6 +146,7 @@ body {
   width: 700px;
   margin-top: 30px;
 }
+
 .novedad2 img {
   width: 100%;
 }
@@ -164,7 +161,7 @@ body {
 
 .grid_contacto {
   width: 80%;
-  margin-left: 14%;
+  margin-left: 125px;
 }
 
 .imagen_ubicacion img {
@@ -179,12 +176,15 @@ body {
   grid-template-areas: "texto texto" "form ubicacion";
   gap: 15px;
 }
+
 .grid_contacto .texto_contacto {
   grid-area: texto;
 }
+
 .grid_contacto .form_contacto {
   grid-area: form;
 }
+
 .grid_contacto .form_contacto .formulario {
   display: flex;
   flex-direction: column;
@@ -195,12 +195,14 @@ body {
   margin: 10px;
   justify-content: center;
 }
+
 .grid_contacto .form_contacto h2 {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
+
 .grid_contacto .imagen_ubicacion {
   grid-area: ubicacion;
 }
@@ -274,29 +276,27 @@ i {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 150px repeat(2, 1fr);
     grid-template-areas: "texto" "form" "ubicacion";
-    gap: 10px;
+    gap: 15px;
   }
   .texto_contacto {
     grid-area: texto;
-    width: 90%;
+    width: 310px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
+    margin-left: 30px;
+    margin-top: 70px;
   }
   .form_contacto {
     grid-area: form;
-    width: 90%;
+    width: 370px;
     margin-top: 70px;
   }
   .imagen_ubicacion {
     grid-area: ubicacion;
   }
-  .imagen_ubicacion img {
-    width: 90%;
-  }
   .encabezado_tel {
-    font-size: 100%;
+    font-size: 10pt;
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -318,5 +318,6 @@ i {
     width: 300px;
   }
 }
+
 
 /*# sourceMappingURL=style.css.map */

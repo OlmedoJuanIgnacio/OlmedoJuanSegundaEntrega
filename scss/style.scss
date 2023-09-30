@@ -1,16 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-   
-    }
+@import"./Partials/reset";
+@import"./Partials/variables";
 
-body{
-    background: rgb(212, 235, 212);
+body {
+    
+    background: linear-gradient(rgb(212, 235, 212), rgb(139, 238, 108));
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: $ancho;
 
 }
 
@@ -23,18 +21,16 @@ body{
 
 }
 
-
-
 /* Navegacion bootstrap*/
 
 .encabezado_navbar{
 
-    width: 100%;
+    width: $ancho;
     margin-bottom: 40px;
     
     .container-fluid {
         background-color: rgb(146, 252, 151);
-        width: 100%;
+        width: $ancho;
 
         .navbar-nav {
             margin-left: 10%;
@@ -43,40 +39,46 @@ body{
 
               a {
 
-                margin-left: 80px;
+                margin-left: 70px;
+            }
+            a:hover {
+                transform: scale(1.20);
             }
           }
     }
 }
 
-
-
-
-
-
 .encabezado_tel {
 
-    width: 70%;
+    width: 50%;
     height: 10%;
     background-color:rgb(189, 231, 192) ;
     position: absolute;
-    margin-left: 40%;
+    margin-left: 45%;
     display: flex;
     align-items: center;
     justify-content:center;
     gap: 15px;
     color: rgb(126, 189, 147);
     margin-top: 20px;
-    font-size: 20pt;
+    font-size: 150%;
+    
     .encabezado_wp {
         display: flex;
     
     }
 }
 
+.carousel {
 
+    width: $ancho;
 
-
+   .carousel-item img {
+    height: 400px;
+   }
+    
+    
+}
 
 .contenido_principal {
     display: flex;
@@ -89,10 +91,6 @@ body{
 
     
     }
-
-
-
-
 
 /* Pag quienes somos*/
 
@@ -118,16 +116,12 @@ body{
 
 /* Pagina Productos*/
 
-
 .titulo_producto {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 }
-
-
-
 
 .grid_productos {
 
@@ -137,8 +131,6 @@ body{
     overflow: auto;
     gap: 10px;
 
-    
-    
     .card{
         border-radius: 10px;
         background: white;
@@ -150,8 +142,6 @@ body{
             height: 400px
         }
        
-    
-    
         .card-body {
             width: 500px;
             background: white;
@@ -169,12 +159,12 @@ body{
                 
             }
     }
-    
+    .card:hover{
+        transform: scale(1.02);
+        border-radius: 10px;
+    }
     
 }
-
-
-
 
 /* Pagina Novedades */
 
@@ -184,24 +174,21 @@ body{
     width: 700px;
     
     video{
-        width: 100%;
+        width: $ancho;
         
         
     }
 }
-
 
 .novedad2{
     width: 700px;
     margin-top: 30px;
     
     img{
-        width: 100%;
+        width: $ancho;
         
         }
 }
-
-
 
 /* Pagina Contacto*/
 
@@ -210,21 +197,18 @@ body{
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-
-
 }
 
 
 .grid_contacto{
     width: 80%;
-    margin-left: 125px;
+   margin-left: 14%;
 }
 
 .imagen_ubicacion img{
     width: 500px;
     height: 400px;
 }
-
 
 .grid_contacto {
 
@@ -267,9 +251,6 @@ body{
 
 }
 
-
-
-
 .form_control lebel, .form_control input  {
 
     height: 30px;
@@ -299,150 +280,15 @@ body{
     margin-bottom: 50px;
     margin-top: 50px;
 
-
 }
 
 i {
     font-size: 35px;
 }
 
-
-
 /* Vista Movil*/
 
-@media ( max-width: 415px) {
-    
-    
-    .encabezado_tel{
-        display: none;
-    }
-
-
-
-    .imagen_principal{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 80px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .grid_productos{
-        display: grid;
-        grid-template-columns: repeat(1 , 1fr);
-        grid-template-rows: repeat(4 , 1fr);
-        overflow: auto;
-        gap: 10px;
-        
-        .card {
-
-            img {
-    
-                width: 290px;
-                height: 250px
-            }
-    
-            .card-body {
-                width: 290px;
-                background: white;
-               
-            }
-    }
-
-    
-    }
-    
-   
-    
-    .icons{
-            margin-top: 20px;
-        }
-
-   .grid_contacto {
-
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: 150px repeat(2, 1fr);
-            grid-template-areas: 
-            "texto"
-            "form" 
-            "ubicacion";
-            gap: 15px;
-        }
-        
-    .texto_contacto{
-            grid-area:texto;
-            width: 310px;
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           margin-left: 30px;
-           margin-top: 70px;
-      
-            
-
-        }
-
-     
-         
-        
-    .form_contacto{
-            grid-area:form;
-            width: 370px;
-            margin-top:70px ;
-
-    }
-
-    .imagen_ubicacion{
-        grid-area: ubicacion;
-        
-    }
-    
-
-    .encabezado_tel {
-        font-size: 10pt;
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-        height: 13%;
-        
-    }
-
-
-    .novedad1{
-    
-        
-        width: 300px;
-        
-        video{
-            width: 100%;
-            
-            
-        }
-    }
-    
-    
-    .novedad2{
-        width: 300px;
-        
-        
-        img{
-            width: 100%;
-            
-            }
-    }
-
-
-    .principal_qs{
-
-        img{
-            width: 300px;
-        }
-
-}
-
-}
+@import"./Partials/queries";
 
 
 
